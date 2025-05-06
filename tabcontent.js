@@ -1,11 +1,3 @@
-//** Tab Content script v2.0- © Dynamic Drive DHTML code library (http://www.dynamicdrive.com)
-//** Updated Oct 7th, 07 to version 2.0. Contains numerous improvements:
-//   -Added Auto Mode: Script auto rotates the tabs based on an interval, until a tab is explicitly selected
-//   -Ability to expand/contract arbitrary DIVs on the page as the tabbed content is expanded/ contracted
-//   -Ability to dynamically select a tab either based on its position within its peers, or its ID attribute (give the target tab one 1st)
-//   -Ability to set where the CSS classname "selected" get assigned- either to the target tab's link ("A"), or its parent container
-//** Updated Feb 18th, 08 to version 2.1: Adds a "tabinstance.cycleit(dir)" method to cycle forward or backward between tabs dynamically
-//** Updated April 8th, 08 to version 2.2: Adds support for expanding a tab using a URL parameter (ie: http://mysite.com/tabcontent.htm?tabinterfaceid=0) 
 
 ////NO NEED TO EDIT BELOW////////////////////////
 

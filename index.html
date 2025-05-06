@@ -8,20 +8,49 @@
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="tabcontent.css" />
 <script type="text/javascript" src="tabcontent.js">
-/***********************************************
-* Tab Content script v2.2- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
-* This notice MUST stay intact for legal use
-* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
-***********************************************/
+
 </script>
-<!--  HTML CSS Template Designed by w w w . t e m p l a t e m o . c o m  --> 
+
+
 </head>
+<div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const closeBtn = document.querySelector(".modal-close");
+  
+    document.querySelectorAll("img").forEach(img => {
+      img.style.cursor = "pointer";
+      img.addEventListener("click", () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+  
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+      modalImg.src = "";
+    };
+  
+    modal.onclick = function (e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        modalImg.src = "";
+      }
+    };
+  });
+  </script>
 <body>
 <div id="templatemo_container">
 
 	<div id="templatemo_top_panel">
         <div id="templatemo_sitetitle">
-            Finding Persepherone
+            Finding Persephone
         </div>
         <div id="templatemo_searchbox">
             <form action="#" method="get">
@@ -63,10 +92,9 @@
     
     <div id="templatemo_menu">
         <ul>
-            <li><a href="index.html"  class="current">CCTV</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Life</a></li>
-            <li><a href="#">Investigation</a></li> 
+            <li><a href="index.html"  class="current">News</a></li>
+            <li><a href="index 2.html">Home</a></li>
+            <li><a href="#">Media</a></li>
         </ul> 
 	</div>
     
@@ -81,7 +109,7 @@
                     <p>
                         Hidden from major roads, this path leads into a dense, unnatural silence. Botanists have noted that several of the plant species here show abnormal growth patterns. Soil samples reveal unusual mineral content and traces of energy surges that don’t match local infrastructure records.
 
-                        For those familiar with Persephone’s research into “urban underworlds,” this trail may not be random—it might be the threshold. A symbolic gateway. The kind of place you’d expect in myths, yes—but also the kind of place where secrets are buried and never meant to be found.</p>
+                        For those familiar with Persephones research into “urban underworlds,” this trail may not be random—it might be the threshold. A symbolic gateway. The kind of place you’d expect in myths, yes—but also the kind of place where secrets are buried and never meant to be found.</p>
                   <p>   <a href="#">full story</a></p>
                   <span class="updatedtime">updated 12 minutes ago</span>
 				</div> 
@@ -89,12 +117,12 @@
                 <div id="templatemo_gallery_section">
                 	<h2>CCTV Footage </h2>
               <div id="image_section">
-                        <a href="#"><img src="images/hp5.jpeg" alt="image" /></a>
-                        <a href="#"><img src="images/hp6.jpeg" alt="image" /></a>
-                        <a href="#"><img src="images/hp7.jpeg" alt="image" /></a>
-                        <a href="#"><img src="images/hp8.jpeg" alt="image" /></a>
-                        <a href="#"><img src="images/hp9.jpeg" alt="image" /></a>
-                        <a href="#"><img src="images/hp10.jpeg" alt="image" /></a>
+                        <a href="images/hp31.jpg"><img src="images/hp5.jpeg" alt="image" /></a>
+                        <a href="images/hp32.jpg"><img src="images/hp6.jpeg" alt="image" /></a>
+                        <a href="images/hp33.jpg"><img src="images/hp7.jpeg" alt="image" /></a>
+                        <a href="images/hp34.jpg"><img src="images/hp8.jpeg" alt="image" /></a>
+                        <a href="images/hp35.jpg"><img src="images/hp9.jpeg" alt="image" /></a>
+                        <a href="images/hp36.jpg"><img src="images/hp10.jpeg" alt="image" /></a>
 					</div>
                     <div class="view_all"><a href="#">View All Footage</a></div>
                 </div>
@@ -111,10 +139,10 @@
                     <ul>
                         <li><a href="#">New Witness Comes Forward: Claims of a Secret Underground Facility</a></li>
                         <li><a href="#">Uncovered: Hades Symbol Etched Beneath the City</a></li>
-                        <li><a href="#">Mysterious Signal Intercepted – Is Persephone Trying to Reach Out?</a></li>
+                        <li><a href="#">Mysterious Signal Intercepted - Is Persephone Trying to Reach Out?</a></li>
                         <li><a href="#">Leaked Documents Reveal Government Ties to Hades</a></li>
                         <li><a href="#">The Persephone Protocol: A Coded Message in Her Journal?</a></li>
-                        <li><a href="#">Strange Activity Reported Near the Abduction Site – They're Back</a></li>
+                        <li><a href="#">Strange Activity Reported Near the Abduction Site –  They're Back</a></li>
                         <li><a href="#">A Whisper in Static: Audio Log Surfaces from Inside Hades</a></li>
                     </ul>
                     <a href="#">Read all updates for the last 24 hrs</a>
@@ -139,6 +167,7 @@
                 
                 <div class="regular_section">
 				</div>
+                <a href="images/hp38.png"><img src="images/hp37.png" alt="image" /></a>
             </div>
             
             <div class="tab_section">
@@ -237,11 +266,11 @@
                         <div class="newslist">
                             <ul>
                             	<li><a href="#">Cyber operations expert—handles surveillance, data erasure, and misinformation.</a></li>
-                                <li><a href="#">Believed to have wiped Persephone’s digital trail after the abduction.</a></li>
+                                <li><a href="#">Believed to have wiped Persephones digital trail after the abduction.</a></li>
                                 <li><a href="#">Uses stolen credentials to pose as campus IT staff.</a></li>
-                                <li><a href="#">Left behind altered files in Persephone’s research drive—possibly a warning or misdirection.</a></li>
+                                <li><a href="#">Left behind altered files in Persephones research drive—possibly a warning or misdirection.</a></li>
                                 <li><a href="#">Known to spread conspiracy noise online to discredit real findings.</a></li>
-                                <li><a href="#">May have intercepted Demeter’s early posts before they went viral.</a></li>
+                                <li><a href="#">May have intercepted Demeters early posts before they went viral.</a></li>
                             </ul>
                             <a href="#">Read All Latest News</a>
                         </div>
@@ -288,16 +317,16 @@
             	<div id="templatemo_video_section">
                     <h2>Crime scene</h2>
                     <div class="video_box">
-                        <img src="images/hp0.jpeg" alt="image" />
-                        <a href="#"><span>Play:</span> The Last Known Footage: Persephone’s Disappearance Caught on Camera</a>
+                        <a href="images/hp45.jpeg"><img src="images/hp0.jpeg" alt="image" /></a>
+                        <a href="images/MapLocation.mp4"><span>Play:</span> The Last Known Place: Persephones Disappearance Caught on Aerial view</a>
                     </div>
                     <div class="video_box">
-                        <img src="images/hp1.jpeg" alt="image" />
-                        <a href="#"><span>Play:</span> What Are They Hiding? Shadowy Figures at the Scene</a>                    
+                        <a href="images/hp46.jpeg"><img src="images/hp1.jpeg" alt="image" /></a>
+                        <a href="images/MetaHumanCreator-Opera2568-04-1818-09-05-ezgif.com-crop-video.mp4"><span>Play:</span> Metahuman Prototype of Persephone</a>                    
                     </div> 
                     <div class="video_box">
-                        <img src="images/hp2.jpeg" alt="image" />
-                        <a href="#"><span>Play:</span> They Came in the Night: The Silent Extraction Operation</a>                    
+                        <a href="images/hp44.jpeg"><img src="images/hp2.jpeg" alt="image" /></a>
+                        <a href="#"><span>Play:</span> They Came in the Night: The Not-So Silent Extraction Operation</a>                    
                     </div>
                     <div class="view_all"><a href="#">View All</a></div>
 				</div>
@@ -328,20 +357,20 @@
                     <div class="blog_box">
                         <h3><a href="#">Unsettled Ground</a></h3>
                         Posted by <a href="#"><span>Demeter</span></a> in <a href="#"><span>5 Days Before Disappearance</span></a><br />
-                        Persephone’s been distant lately. Not the usual kind—the kind that feels like she’s watching shadows you can’t see. Last night she mentioned a man who keeps showing up near her classes. I told her it’s probably nothing, but I’ve started walking her home again. Just in case. The city’s been strange lately—sirens at odd hours, power flickers, and that hum under the pavement. Is it just me, or is something building beneath our feet?<br />
+                        Persephones been distant lately. Not the usual kind—the kind that feels like shes watching shadows you cant see. Last night she mentioned a man who keeps showing up near her classes. I told her its probably nothing, but Ive started walking her home again. Just in case. The citys been strange lately—sirens at odd hours, power flickers, and that hum under the pavement. Is it just me, or is something building beneath our feet?<br />
                         <div class="datetime">15:00 January 25th, 2002</div>
                     </div>
                     
                     <div class="blog_box">
                         <h3><a href="#">The Flowers Are Dying</a></h3>
                         Posted by <a href="#"><span>Demeter</span></a> in <a href="#"><span>3 Days Before Disappearance</span></a><br />
-                        She left a note on the fridge that just said: “If I’m late, don’t wait.” I laughed at the time. Now I can’t stop thinking about it. Persephone brought home a bouquet yesterday, and every flower wilted overnight. She joked about it, but there was something in her eyes—like she already knew something was coming. I’ve started hearing whispers when the lights go out. I don’t believe in ghosts. But I believe in patterns. And this one is getting clearer.<br />
+                        She left a note on the fridge that just said: “If Im late, dont wait.” I laughed at the time. Now I cant stop thinking about it. Persephone brought home a bouquet yesterday, and every flower wilted overnight. She joked about it, but there was something in her eyes—like she already knew something was coming. Ive started hearing whispers when the lights go out. I dont believe in ghosts. But I believe in patterns. And this one is getting clearer.<br />
                         <div class="datetime">13:00 January 21st, 2002</div>
                     </div>   
                     <div class="blog_box">
-                        <h3><a href="#">They’re Watching Her</a></h3>
+                        <h3><a href="#">Theyre Watching Her</a></h3>
                         Posted by <a href="#"><span>Demeter</span></a> in <a href="#"><span>Day Before Disappearance</span></a><br />
-                        She told me not to worry. That it’s “just a student group” and that they “talk underground.” I asked where underground. She laughed. She always laughs when she’s lying. Today I found a black envelope in her jacket—no return address, no note. Just the symbol. Three interlocking circles. I don’t know what it means, but I’m going to find out. And if you're reading this, keep your eyes open. Something is coming.<br />
+                        She told me not to worry. That its “just a student group” and that they “talk underground.” I asked where underground. She laughed. She always laughs when shes lying. Today I found a black envelope in her jacket no return address, no note. Just the symbol. Three interlocking circles. I dont know what it means, but Im going to find out. And if you're reading this, keep your eyes open. Something is coming.<br />
                         <div class="datetime">13:00 January 21st, 2002</div>
                     </div> 
                                        
@@ -381,7 +410,6 @@
         </div>
         
     </div> <!-- end of footer -->
-<!--  HTML CSS Template Designed by w w w . t e m p l a t e m o . c o m  --> 
 </div>
-<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>
+<div align=center> <a href=''></a></div></body>
 </html>
